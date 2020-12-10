@@ -34,3 +34,14 @@ Processing by StaticController#hello_world as HTML
 Completed 200 OK in 312ms (Views: 311.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/hello_world" for 24.224.49.27 at 2020-12-10 18:09:31 +0000
+Processing by StaticController#hello_world as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::MissingTemplate (Missing template /hello_world with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/jlruehle/rails-hello-world-lab-online-web-sp-000/app/views"
+):
+  
+app/controllers/static_controller.rb:4:in `hello_world'
